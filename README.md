@@ -1,6 +1,6 @@
-# theseus-fe(WIP)
+# theseus-fe
 
-> FE for theseus.online
+> new FE for theseus.online
 
 ## Build Setup
 
