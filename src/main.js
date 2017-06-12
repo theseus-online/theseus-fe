@@ -1,15 +1,20 @@
-// The Vue build version to load with the `import` command
-// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
-import Vue from 'vue'
-import App from './App'
-import router from './router'
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import VueResource from 'vue-resource';
+import App from './App.vue';
+import router from './router';
+import iView from 'iview';
+import 'iview/dist/styles/iview.css'
+import locale from 'iview/src/locale/lang/en-US';
 
-Vue.config.productionTip = false
+Vue.use(iView, { locale });
+Vue.use(VueRouter);
+Vue.use(VueResource);
 
-/* eslint-disable no-new */
+Vue.http.options.root = '/proxy';
+
 new Vue({
-  el: '#app',
-  router,
-  template: '<App/>',
-  components: { App }
+    el: '#app',
+    router: router,
+    render: h => h(App)
 })

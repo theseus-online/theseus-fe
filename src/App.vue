@@ -1,23 +1,36 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view></router-view>
-  </div>
+    <div>
+        <Affix @on-change="onAffix"><header-bar :user="userinfo"></header-bar></Affix>
+        <header-bar :user="userinfo" v-if="showFakeBar" style="z-index: -1;"></header-bar>
+        <router-view></router-view>
+        <footer-bar></footer-bar>
+    </div>
 </template>
 
 <script>
-export default {
-  name: 'app'
-}
-</script>
+    import HeaderBar from './components/header.vue';
+    import FooterBar from './components/footer.vue';
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+    export default {
+        data: function() {
+            return {
+                userinfo: null,
+                showFakeBar: false,
+            }
+        },
+        mounted: function() {
+            this.$http.get('myself').then(response => {
+                this.userinfo = response.data;
+            }, response => {});
+        },
+        components: {
+            headerBar: HeaderBar,
+            footerBar: FooterBar
+        },
+        methods: {
+            onAffix: function() {
+                this.showFakeBar = true;
+            }
+        }
+    }
+</script>
