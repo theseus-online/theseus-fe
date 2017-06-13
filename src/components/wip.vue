@@ -1,6 +1,7 @@
 <template>
     <div class="wip">
         <!--<img src="../assets/images/wip.png"></img>-->
+        <div class="title">Member List</div>
         <div class="member" v-for="user in userList" :key="user">
             <div class="avatar"><img :src="user.avatar_url" /></div>
             <div class="member-info">
@@ -45,8 +46,14 @@ export default {
         justify-content: center;*/
         margin-top: 10px;
     }
+    .title {
+        width: 420px;
+        padding-left: 10px;
+        margin: 0 auto;
+        border-bottom: 2px solid #2d8cf0;
+        font-size: 18px;
+    }
     .member {
-        display: block;
         width: 300px;
         margin: 10px auto;
     }
