@@ -3,6 +3,7 @@ import Wip from './components/wip.vue';
 import Test from './components/test.vue';
 import Home from './components/home.vue';
 import User from './components/user.vue';
+import About from './components/about.vue';
 import Deployment from './components/deployment.vue';
 import NewDeployment from './components/new-deployment.vue';
 import DelDeployment from './components/del-deployment.vue';
@@ -32,7 +33,7 @@ export default new VueRouter({
         {
             name: 'about',
             path: '/about',
-            component: Wip,
+            component: About,
         },
         {
              name: 'user',
