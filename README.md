@@ -1,21 +1,12 @@
 # theseus-fe
 
-> new FE for theseus.online
+> Front End for theseus.online (Work In Progress)
 
-## Build Setup
+## Dev Plan
+![README](README.png)
 
-``` bash
-# install dependencies
-npm install
+## Note
+Website: https://theseus.online
+Current Version: branch [previous](https://github.com/theseus-online/theseus-fe/tree/previous)
 
-# serve with hot reload at localhost:8080
-npm run dev
 
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
