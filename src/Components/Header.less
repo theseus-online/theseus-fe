@@ -4,7 +4,6 @@
 .header {
   text-align: center;
   height: 60px;
-  line-height: 60px;
   .header-nav {
     list-style: none;
     .logo {
@@ -18,6 +17,7 @@
       }
     }
     .nav-item {
+      line-height: 60px;
       font-size: 14px;
       color: #fff;
       background: @nav-item-bg;
@@ -32,7 +32,10 @@
       border-radius: 0 0 8px 8px;
     }
     .nav-item-selected {
-      background: @nav-item-selected-bg;
+      //background: @nav-item-selected-bg;
+      line-height: 58px;
+      height: 58px;
+      border-top: 2px solid #fff;
     }
   }
 }

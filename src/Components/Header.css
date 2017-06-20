@@ -1,7 +1,6 @@
 .header {
   text-align: center;
   height: 60px;
-  line-height: 60px;
 }
 .header .header-nav {
   list-style: none;
@@ -17,6 +16,7 @@
   vertical-align: top;
 }
 .header .header-nav .nav-item {
+  line-height: 60px;
   font-size: 14px;
   color: #fff;
   background: rgba(255, 255, 255, 0.1);
@@ -28,5 +28,7 @@
   border-radius: 0 0 8px 8px;
 }
 .header .header-nav .nav-item-selected {
-  background: rgba(255, 255, 255, 0.3);
+  line-height: 58px;
+  height: 58px;
+  border-top: 2px solid #fff;
 }
