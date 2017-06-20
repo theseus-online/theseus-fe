@@ -1,0 +1,47 @@
+@import "../Styles/Common";
+
+@block-bg: rgba(255, 255, 255, 0.2);
+.home {
+  width: 1100px;
+  margin: 20px auto;
+  .block {
+    background: @block-bg;
+    padding: 20px;
+    border-radius: 6px;
+  }
+  .prod-index {
+    .content-wrapper {
+      color: #FFF;
+      width: 400px;
+      margin: 20px auto;
+      text-align: center;
+      .content-logo {
+        margin: 20px;
+      }
+      .content-title {
+        font-size: 24px;
+      }
+    }
+    .start-button-wrapper {
+      .start-button {
+        background: @primary-button-bg;
+        //border: 2px solid @primary-button-border;
+        text-align: center;
+        font-size: 14px;
+        color: @primary-button-text;
+        width: 160px;
+        height: 50px;
+        margin: 0 auto;
+        line-height: 50px;
+        border-radius: 8px;
+        .start-button-icon {
+          margin-right: 6px;
+        }
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+

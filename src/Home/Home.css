@@ -1,0 +1,38 @@
+.home {
+  width: 1100px;
+  margin: 20px auto;
+}
+.home .block {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 6px;
+}
+.home .prod-index .content-wrapper {
+  color: #FFF;
+  width: 400px;
+  margin: 20px auto;
+  text-align: center;
+}
+.home .prod-index .content-wrapper .content-logo {
+  margin: 20px;
+}
+.home .prod-index .content-wrapper .content-title {
+  font-size: 24px;
+}
+.home .prod-index .start-button-wrapper .start-button {
+  background: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  color: #0066FF;
+  width: 160px;
+  height: 50px;
+  margin: 0 auto;
+  line-height: 50px;
+  border-radius: 8px;
+}
+.home .prod-index .start-button-wrapper .start-button .start-button-icon {
+  margin-right: 6px;
+}
+.home .prod-index .start-button-wrapper:hover {
+  cursor: pointer;
+}
