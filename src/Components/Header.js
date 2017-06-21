@@ -4,7 +4,10 @@
 import React, { Component } from 'react';
 import logo from '../Images/logo-large.png';
 import './Header.css';
-
+function click () {
+    console.log('Clicked!');
+    window.open('https://github.com/theseus-online', 'theseus-online - Github');
+}
 export default class Header extends Component {
     render () {
         return (
@@ -15,7 +18,7 @@ export default class Header extends Component {
                     <li className="nav-item"><i className="icon ion-ios-bookmarks-outline" /> Tutorial</li>
                     <li className="nav-item"><i className="icon ion-social-rss-outline" /> Blog</li>
                     <li className="nav-item"><i className="icon ion-ios-information-outline" /> About</li>
-                    <li className="nav-item"><i className="icon ion-social-github" /> Github</li>
+                    <li className="nav-item" onClick={ click }><i className="icon ion-social-github" /> Github</li>
                 </ul>
             </div>
         )
