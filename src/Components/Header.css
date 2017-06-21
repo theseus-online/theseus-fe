@@ -27,6 +27,11 @@
   text-align: center;
   border-radius: 0 0 8px 8px;
 }
+.header .header-nav .nav-item:hover {
+  line-height: 58px;
+  height: 58px;
+  border-top: 2px solid #fff;
+}
 .header .header-nav .nav-item-selected {
   line-height: 58px;
   height: 58px;
